@@ -135,7 +135,7 @@ class MarkdownBuilder implements md.NodeVisitor {
         ? delegate.formatText(styleSheet, str)
         : new TextSpan(
             style: _inlines.last.style,
-            text: text.text,
+            text: str,
             recognizer: _linkHandlers.isNotEmpty ? _linkHandlers.last : null,
           );
 
